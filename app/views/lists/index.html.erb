@@ -4,4 +4,8 @@
   <% @lists.each do |list| %>
     <li><%= link_to list.name, list_path(list) %></li>
   <% end %>
+
+  <div> <button>
+  <%= link_to "Crée une liste", new_list_path %> </button>
+</div>
 </ul>
